@@ -213,7 +213,7 @@ class PeftModel(PushToHubMixin, torch.nn.Module):
         model: PreTrainedModel,
         model_id: Union[str, os.PathLike],
         adapter_name: str = "default",
-        is_trainable: bool = False,
+        is_trainable: bool = True,
         config: Optional[PeftConfig] = None,
         **kwargs: Any,
     ):
